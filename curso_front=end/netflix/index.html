@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="shortcut icon" href="assets/317-3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg_filmes">
+    <div class="container-fluid">
+        <header class="row">
+            <h1>NETFLIX</h1>
+        </header>
+    </div>
+    <div class="alinhamento">
+        <h2 id="text-white">Entrar</h2>
+        <form>
+            <input type="email" name="e-mail" class="form-control" placeholder="Email ou número de telefone"><br>
+            <input type="password" name="senha" class="form-control" placeholder="Senha"><br>
+            <button class="bnt">Entrar</button>
+            <p style="text-align: center; color: white; font-family: Arial, Helvetica, sans-serif;margin-bottom: 4px;">OU</p><br>
+            <button class="cinza">Usar um código de acesso</button>
+            <a href="#" class="centro">Esqueceu a senha?</a>
+            <div class="row">
+                <div class="col">
+                    <input type="checkbox" name="check" id="check"> Lembre-se de mim
+                    <div class="mesma_linha">
+                        <p>Novo por aqui? <a href="#" id="mudanca_cor"><strong>Assine Agora</strong></a></p>
+                    </div>
+                </div>
+            </div>
+            <p style="color: white;font-family: Arial, Helvetica, sans-serif;font-size: 0.9em;">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a onclick="info()" id="resultado" style="color: hsl(221, 100%, 46%);">Saiba mais</a></p>
+        </form>
+    </div>
+    <footer>
+        <p>Dúvidas? Ligue <a onclick="clicar()">0800 591 2876</a></p>
+        <div class="space">
+            <a href="https://help.netflix.com/pt/node/412">Perguntas Frequentes</a>
+            <a href="https://help.netflix.com/pt">Central de Ajuda</a>
+            <a href="https://help.netflix.com/legal/termsofuse">Termos de Uso</a>
+            <a href="https://help.netflix.com/legal/privacy">Privacidade</a>
+        </div><br>
+        <div class="space">
+            <a href="https://help.netflix.com/pt/node/134094">Informações corporativas</a>
+            <a href="#">Preferência de cookies</a>
+        </div>
+        <select>
+            <option value="portugues">🌐 Português</option>
+            <option value="english">🌐 English</option>
+        </select>
+    </footer>
+    <script>
+        function clicar(){
+            window.confirm("https://www.netflix1.com quer abrir esta aplicação");
+        }
+        function info(){
+            let resultado = document.getElementById("resultado");
+            resultado.innerHTML = "<p>As informações recolhidas pelo Google reCAPTCHA \nestão sujeitas à <a target='_blank' style='color:hsl(221, 100%, 46%);' href='https://policies.google.com/privacy'>Política de Privacidade</a> e <a style='color:hsl(221, 100%, 46%);' target='_blank' href='https://policies.google.com/terms'>Termos de Uso</a>\nserviço reCAPTCHA e por questões de segurança (não\n são usadas para exibir anúncios personalizados pelo\nGoogle)</p>" 
+            resultado.style.color = "white";
+            resultado.style.textDecoration = "none";
+            resultado.style.lineHeight = "0.9"
+        }
+    </script>
+</body>
+</html>
